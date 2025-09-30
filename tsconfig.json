@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",             
+    "module": "nodenext",           
+    "outDir": "./public/dist",           
+    "rootDir": "./src",           
+    "strict": true,               
+    "esModuleInterop": true,      
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "moduleResolution": "nodenext"
+  },
+  "include": ["./**/*.ts"],     
+  "exclude": ["node_modules"]
+}

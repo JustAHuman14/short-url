@@ -1,0 +1,4 @@
+node_modules/
+public/dist/
+package-lock.json
+public/output.css
