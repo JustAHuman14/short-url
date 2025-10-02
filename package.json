@@ -4,7 +4,8 @@
   "description": "",
   "main": "public/dist/server.js",
   "scripts": {
-    "build": "tsc && npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css"
+    "build": "tsc && npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css",
+    "dev": "tsc --watch && npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "type": "module",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongoose": "^8.18.2",
     "nanoid": "^5.1.6",

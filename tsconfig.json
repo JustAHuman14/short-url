@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6",             
+    "target": "esnext",             
     "module": "nodenext",           
     "outDir": "./public/dist",           
     "rootDir": "./src",           
@@ -10,6 +10,6 @@
     "skipLibCheck": true,
     "moduleResolution": "nodenext"
   },
-  "include": ["./**/*.ts"],     
+  "include": ["./**/*.ts", "src/models/url.ts"],     
   "exclude": ["node_modules"]
 }
