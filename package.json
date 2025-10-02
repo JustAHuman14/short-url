@@ -1,13 +1,13 @@
 {
   "name": "short-url",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Url Shortener ig",
   "main": "public/dist/server.js",
   "scripts": {
     "build": "tsc && npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "JustAHuman",
   "license": "ISC",
   "type": "module",
   "dependencies": {
