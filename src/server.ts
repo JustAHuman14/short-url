@@ -35,8 +35,12 @@ app.get("/:urlId", async (req: Request, res: Response): Promise<void> => {
 
   if (Url) {
     res.redirect(Url.url);
+  } else {
+    const html = `<!DOCTYPE html><head><title>Not Found</title></head><body><h1>Page Not Found<h1/></body></html>`
+    res.send(html)
   }
 });
+
 app.listen(port, (): void => {
   console.log("Server is running on http://localhost:3000");
 });
