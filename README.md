@@ -21,8 +21,7 @@ npm run build
 This will compile TypeScript files into `dist/` and process Tailwind CSS from `public/input.css` to `public/output.css`.
 
 ## Development Mode
-For live updates during development, run the following in separate terminals:
+For live updates during development, run the following:
 ```bash
-npx tailwindcss -i ./public/input.css -o ./public/output.css --watch
-tsc --watch
+npm run dev
 ```
