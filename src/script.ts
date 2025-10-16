@@ -22,7 +22,7 @@ form.addEventListener("submit", (e: Event) => {
     .then((res: Response): Promise<shortUrl> => res.json())
     .then((data) => {
       clipboard.classList.remove("hidden");
-      short_url.textContent = `${window.location.href}${data.message}`;
+      short_url.textContent = `${window.location.origin}/${data.message}`;
       input.value = "";
     });
 });
