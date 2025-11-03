@@ -30,11 +30,6 @@ app.post("/short-url", async (req: Request, res: Response): Promise<void> => {
   res.status(201).json({ message: url.id });
 });
 
-app.get("/.well-known/discord", (req: Request, res: Response): void => {
-  res.setHeader("Content-Type", "text/plain");
-  res.send(process.env.DISCORD_DNS);
-});
-
 app.get(
   "/:urlId",
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
